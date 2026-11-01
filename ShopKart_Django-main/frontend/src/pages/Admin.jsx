@@ -9,7 +9,7 @@ function CategoryAdmin() {
 
   useEffect(() => {
     async function getCategoryData() {
-      let res = await axios.get("http://127.0.0.1:8000/api/categories/list");
+      let res = await axios.get("https://shopkart-gqwt.onrender.com/api/categories/list");
       setCategories(res.data);
       setLoading(false);
     }
@@ -23,7 +23,7 @@ function CategoryAdmin() {
       name: e.target[1].value,
       description: e.target[2].value,
     };
-    const Res = await axios.post("http://127.0.0.1:8000/api/categories/create", Data);
+    const Res = await axios.post("https://shopkart-gqwt.onrender.com/api/categories/create", Data);
     console.log(Res.data);
   }
 

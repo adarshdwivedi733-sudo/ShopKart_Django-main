@@ -13,11 +13,7 @@ SECRET_KEY = 'django-insecure-i(e=(f0+a^7h$f7d%42y08+4+)!6=ho$c*t19-_e2*0ya0pj2b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'shopkart-gqwt.onrender.com',
-    'localhost',
-    '127.0.0.1',
-]
+ALLOWED_HOSTS = []
 
 
 # Application definition

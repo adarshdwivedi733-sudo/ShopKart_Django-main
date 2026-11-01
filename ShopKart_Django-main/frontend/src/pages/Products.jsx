@@ -12,7 +12,7 @@ export default function Products(){
    
     if(categoryId)
     {
-      fetch(`http://127.0.0.1:8000/api/products/list/${categoryId}`)
+      fetch(`https://shopkart-gqwt.onrender.com/api/products/list/${categoryId}`)
       .then((res) => res.json())
       .then((json) => {
         const targetData = json;
@@ -28,7 +28,7 @@ export default function Products(){
     }
     else
     {
-       fetch("http://127.0.0.1:8000/api/products/list")
+       fetch("https://shopkart-gqwt.onrender.com/api/products/list")
       .then((res) => res.json())
       .then((json) => {
         const targetData = json;

@@ -7,7 +7,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/categories/list")
+    fetch("https://shopkart-gqwt.onrender.com/api/categories/list")
       .then((res) => res.json())
       .then((json) => {
         const targetData = json;
